@@ -6,6 +6,8 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('collection');
+  this.route('album');
 });
 
 export default Router;

@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'font-src': "http://fonts.gstatic.com",
+      'style-src': "'self' http://fonts.googleapis.com http://code.ionicframework.com"
+    },
     modulePrefix: 'bloc-jams-ember',
     environment: environment,
     baseURL: '/',

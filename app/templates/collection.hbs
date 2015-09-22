@@ -1,0 +1,20 @@
+<section class="album-covers container clearfix">
+  {{#each model}}
+    <div class="collection-album-container column fourth">
+      <img {{bindAttr src=albumArtUrl}}/>
+
+      <div class="collection-album-info caption">
+        <p>
+          {{link-to name 'album'}}
+          <br/>
+          {{link-to artist 'album'}}
+          <br/>
+          {{songs.length}} songs
+          <br/>
+        </p>
+      </div>
+    </div>
+  {{/each}}
+</section>
+
+{{outlet}}
